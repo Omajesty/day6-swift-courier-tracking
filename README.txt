@@ -27,7 +27,7 @@ Main Features
 * Caching of the last 10 results
 * Parcel data integrity checking
 
-## Project Files
+Project Files
 
 
 main.py       - Starts the application and handles input/output
@@ -45,7 +45,7 @@ lookups.py    - Handles GET requests
 writes.py     - Handles POST, PUT, and DELETE requests
 
 
-## How a Request Works
+How a Request Works
 
 For example:
 
