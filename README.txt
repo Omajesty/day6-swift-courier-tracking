@@ -1,30 +1,24 @@
-# Swift Arrow Couriers - Tracking Window
+Swift Arrow Couriers - Tracking Window
 
 A simple command-line parcel tracking system for Swift Arrow Couriers. Staff can sign in, track parcels, and manage parcel records securely.
 
-## How to Run
+How to Run
 
 Make sure Python is installed, then run:
 
-```bash
 python main.py
-```
 
 Sign in to receive your JWT token. Use the token when making requests:
 
-```text
 <your-jwt> GET parcel SA-1998500-IY
-```
 
 A JWT has two dots and looks like this:
 
-```text
 xxxxx.yyyyy.zzzzz
-```
 
 Invalid or expired tokens will be rejected.
 
-## Main Features
+Main Features
 
 * Staff authentication with JWT
 * Secure password hashing and salting
@@ -35,7 +29,7 @@ Invalid or expired tokens will be rejected.
 
 ## Project Files
 
-```text
+
 main.py       - Starts the application and handles input/output
 handlers.py   - Reads and processes commands
 auth.py       - Handles sign in, authentication, and sign out
@@ -49,19 +43,19 @@ parcels.py    - Adds, updates, deletes, and saves parcels
 format.py     - Formats parcel information
 lookups.py    - Handles GET requests
 writes.py     - Handles POST, PUT, and DELETE requests
-```
+
 
 ## How a Request Works
 
 For example:
 
-```text
+
 <your-jwt> GET parcel SA-1998500-IY
-```
+
 
 The request goes through:
 
-```text
+
 handlers.py
     ↓
 auth.py
@@ -75,11 +69,11 @@ cache.py / indexes.py
 parcels.py
     ↓
 main.py
-```
+
 
 In simple terms, the system reads your request, checks that you are authorized, finds the parcel, and displays the result.
 
-## Security
+Security
 
 Passwords are protected using SHA-256 with a unique salt for each user.
 
@@ -87,16 +81,12 @@ JWTs are used to make sure only authenticated users can access protected operati
 
 The parcel file also has a hash that can be used to detect unexpected changes.
 
-## Quick Start
+Quick Start
 
-```bash
 python main.py
-```
 
 Then sign in and use your JWT to make parcel requests.
 
 For example:
 
-```text
 <your-jwt> GET parcel SA-1998500-IY
-```
