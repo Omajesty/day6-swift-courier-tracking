@@ -1,0 +1,26 @@
+{
+  "oga_musty": {
+    "salt": "579164fc5aacfdf10db3c4775e42ece7",
+    "pass_hash": "56ca9472e9163b53573d3ae53b264e804edf87f4b470c931eb1f1119a141ee34",
+    "position": "Station Master",
+    "name": "Musty"
+  },
+  "kemi_dispatch": {
+    "salt": "e1654b42cd53c7ceb0579bf8341a0832",
+    "pass_hash": "fac3a81b367f333950f2f3daf3edf8b1179d38bdf7432a1b0beef9da7a157ab2",
+    "position": "Clerk",
+    "name": "Kemi"
+  },
+  "ibrahim_k": {
+    "salt": "a463a330ee8a2e847c5925d635cb1b05",
+    "pass_hash": "f54fb6026931e5e9e688324c7dc01155b4a5f0e2882da9cf781442006b513812",
+    "position": "Clerk",
+    "name": "Ibrahim"
+  },
+  "ngozi_front": {
+    "salt": "bec29b3253ca294ea64791d0aab4c0e1",
+    "pass_hash": "e161ada31049ad377dfdcbdc0806562bbb8f9d66e88d695530cb2bab2550bf5c",
+    "position": "Clerk",
+    "name": "Ngozi"
+  }
+}

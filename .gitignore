@@ -1,0 +1,4 @@
+__pycache__/
+office/__pycache__
+*.pyc
+.day_passes
